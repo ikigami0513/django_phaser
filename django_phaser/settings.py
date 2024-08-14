@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'authentication',
     'base',
 
+    # Third Party Applications
+    'rest_framework',
+
     # Django Core Applications
     'django.contrib.admin',
     'django.contrib.auth',

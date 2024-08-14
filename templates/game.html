@@ -10,6 +10,10 @@
 {% endblock extrajs %}
 
 {% block content %}
+    {% if user.is_authenticated %}
+        {{ user.to_json|json_script:"user" }}
+    {% endif %}
+
     <div id="app">
         <div id="game-container"></div>
     </div>
