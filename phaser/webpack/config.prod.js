@@ -13,7 +13,7 @@ module.exports = {
     mode: "production",
     entry: "./src/main.ts",
     output: {
-        path: path.resolve(process.cwd(), 'dist'),
+        path: path.resolve(process.cwd(), '../static/javascript'),
         filename: "./bundle.min.js"
     },
     resolve: {
@@ -71,16 +71,6 @@ module.exports = {
             "typeof PLUGIN_CAMERA3D": JSON.stringify(false),
             "typeof PLUGIN_FBINSTANT": JSON.stringify(false),
             "typeof FEATURE_SOUND": JSON.stringify(true)
-        }),
-        new HtmlWebpackPlugin({
-            template: "./index.html"
-        }),
-        new CopyPlugin({
-            patterns: [
-                { from: 'public/assets', to: 'assets' },
-                { from: 'public/favicon.png', to: 'favicon.png' },
-                { from: 'public/style.css', to: 'style.css' }
-            ],
         }),
     ]
 };
