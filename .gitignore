@@ -1,0 +1,21 @@
+# System and IDE files
+phaser/Thumbs.db
+phaser/.DS_Store
+phaser/.idea
+phaser/*.suo
+phaser/*.sublime-project
+phaser/*.sublime-workspace
+phaser/*.vscode
+
+# Vendors
+phaser/node_modules/
+
+# Build
+phaser/dist/
+phaser/npm-debug.log
+
+.env
+venv
+*.pyc
+*/migrations/*.py
+!*/migrations/__init__.py
